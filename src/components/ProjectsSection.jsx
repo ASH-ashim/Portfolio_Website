@@ -12,13 +12,13 @@ const projects = [
 },
 {
     id: 2,
-    title: "Full stack Online Grocery App",
+    title: "Full stack Chatting Application",
     description:
-    "Full stack online grocery App with both frontend and backend",
+    "Full stack online chatting application",
     image: "/projects/upcoming.png",
-    tags: ["MERN Stack"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["MERN Stack, Socket.IO"],
+    demoUrl: "ash-social.vercel.app",
+    githubUrl: "https://github.com/ASH-ashim",
 },
 {
     id: 3,
