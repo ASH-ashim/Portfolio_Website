@@ -16,7 +16,7 @@ const projects = [
     description:
     "Full stack online chatting application",
     image: "/projects/project4.png",
-    tags: ["MERN Stack, Socket.IO"],
+    tags: ["MERN Stack", "Socket.IO", "Tailwind CSS"],
     demoUrl: "https://ash-social.vercel.app",
     githubUrl: "https://github.com/ASH-ashim",
 },
