@@ -34,7 +34,8 @@ export const AboutSection = () => {
                 Get In Touch
                 </a>
                 <a
-                href="https://drive.google.com/file/d/1XYkI0LIcEPi1-3RjK4eVlVwrK5CJ7m5U/view?usp=drive_link" download=""
+                //downladable cv
+                href="https://drive.google.com/file/d/1XYkI0LIcEPi1-3RjK4eVlVwrK5CJ7m5U/view?usp=drive_link" download="resume"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                 >
                 View CV
