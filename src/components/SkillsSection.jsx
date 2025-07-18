@@ -9,7 +9,6 @@ const skills = [
     { name: "TypeScript", level: 85, category: "frontend" },
     { name: "Tailwind CSS", level: 90, category: "frontend" },
     { name: "Next.js", level: 80, category: "frontend" },
-    { name: "Three.js", level: 80, category: "frontend" },
 
   // Backend
     { name: "Node.js", level: 80, category: "backend" },
@@ -17,32 +16,14 @@ const skills = [
     { name: "MongoDB", level: 70, category: "backend" },
     { name: "PostgreSQL", level: 70, category: "backend" },
     { name: "Redis", level: 80, category: "backend" },
-    { name: "GraphQL", level: 60, category: "backend" },
     { name: "Nest.js", level: 87, category: "backend" },
-    { name: "WebSockets", level: 90, category: "backend" },
 
-  // Tools
-    { name: "Git/GitHub", level: 90, category: "tools" },
-    { name: "Docker", level: 70, category: "tools" },
-    { name: "DBeaver", level: 95, category: "tools" },
-    { name: "VS Code", level: 95, category: "tools" },
-    { name: "Postman", level: 95, category: "tools" },
-
-    //Mobile App
-    { name: "React Native", level: 90, category: "Mobile" },
-    { name: "Expo", level: 80, category: "Mobile"},
-
-    //Desktop
-    { name: "Electron", level: 80, category: "Desktop" },
 
     //Devops and Cloud
     { name: "Linux", level: 85, category: "DevOps" },
     { name: "CI/CD", level: 90, category: "DevOps" },
     { name: "Docker", level: 96, category: "DevOps" },
     { name: "Kubernetes", level: 92, category: "DevOps" },
-    { name: "Wireshark", level: 88, category: "DevOps" },
-    { name: "Terraform", level: 80, category: "DevOps" },
-    { name: "Ansible", level: 85, category: "DevOps" },
     { name: "Prometheus", level: 85, category: "DevOps" },
     { name: "Go Lang", level: 85, category: "DevOps" },
 
@@ -51,14 +32,10 @@ const skills = [
     { name: "Ether.js", level: 88, category: "Web3 and Blockchain" },
     { name: "Hardhat", level: 89, category: "Web3 and Blockchain" },
     { name: "Foundary", level: 96, category: "Web3 and Blockchain" },
-    { name: "MetaMask", level: 92, category: "Web3 and Blockchain" },
-    { name: "IPFs", level: 90, category: "Web3 and Blockchain" },
-    { name: "Pinata", level: 89, category: "Web3 and Blockchain" },
     { name: "Mocha + Chai", level: 90, category: "Web3 and Blockchain" },
-    { name: "Consensus Algorithms", level: 90, category: "Web3 and Blockchain" },
 ];
 
-const categories = ["all", "frontend", "backend", "Mobile", "Desktop",   "DevOps", "Web3 and Blockchain", "tools",];
+const categories = ["All", "Frontend", "Backend", "Cloud", "Web3 and Blockchain",];
 
 export const SkillsSection = () => {
     const [activeCategory, setActiveCategory] = useState("all");
