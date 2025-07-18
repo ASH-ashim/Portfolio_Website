@@ -29,7 +29,7 @@ const skills = [
 
     //web3 and Blockchain
     { name: "Solidity",  category: "Web3 and Blockchain" },
-    { name: "Ether.js", , category: "Web3 and Blockchain" },
+    { name: "Ether.js", category: "Web3 and Blockchain" },
     { name: "Hardhat",  category: "Web3 and Blockchain" },
     { name: "Foundary",  category: "Web3 and Blockchain" },
     { name: "Mocha + Chai", category: "Web3 and Blockchain" },
