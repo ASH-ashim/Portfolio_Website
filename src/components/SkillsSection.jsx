@@ -11,21 +11,21 @@ const skills = [
     { name: "Next.js", level: 80, category: "frontend" },
 
   // Backend
-    { name: "Node.js", level: 80, category: "backend" },
-    { name: "Express", level: 75, category: "backend" },
-    { name: "MongoDB", level: 70, category: "backend" },
-    { name: "PostgreSQL", level: 70, category: "backend" },
-    { name: "Redis", level: 80, category: "backend" },
-    { name: "Nest.js", level: 87, category: "backend" },
+    { name: "Node.js", level: 80, category: "Backend" },
+    { name: "Express", level: 75, category: "Backend" },
+    { name: "MongoDB", level: 70, category: "Backend" },
+    { name: "PostgreSQL", level: 70, category: "Backend" },
+    { name: "Redis", level: 80, category: "Backend" },
+    { name: "Nest.js", level: 87, category: "Backend" },
 
 
     //Devops and Cloud
-    { name: "Linux", level: 85, category: "DevOps" },
-    { name: "CI/CD", level: 90, category: "DevOps" },
-    { name: "Docker", level: 96, category: "DevOps" },
-    { name: "Kubernetes", level: 92, category: "DevOps" },
-    { name: "Prometheus", level: 85, category: "DevOps" },
-    { name: "Go Lang", level: 85, category: "DevOps" },
+    { name: "Linux", level: 85, category: "Cloud" },
+    { name: "CI/CD", level: 90, category: "Cloud" },
+    { name: "Docker", level: 96, category: "Cloud" },
+    { name: "Kubernetes", level: 92, category: "Cloud" },
+    { name: "Prometheus", level: 85, category: "Cloud" },
+    { name: "Go Lang", level: 85, category: "Cloud" },
 
     //web3 and Blockchain
     { name: "Solidity", level: 90, category: "Web3 and Blockchain" },
