@@ -3,36 +3,36 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend
-    { name: "HTML/CSS", level: 95, category: "frontend" },
-    { name: "JavaScript", level: 90, category: "frontend" },
-    { name: "React", level: 90, category: "frontend" },
-    { name: "TypeScript", level: 85, category: "frontend" },
-    { name: "Tailwind CSS", level: 90, category: "frontend" },
-    { name: "Next.js", level: 80, category: "frontend" },
+    { name: "HTML/CSS",  category: "frontend" },
+    { name: "JavaScript", category: "frontend" },
+    { name: "React",  category: "frontend" },
+    { name: "TypeScript",  category: "frontend" },
+    { name: "Tailwind CSS",  category: "frontend" },
+    { name: "Next.js",  category: "frontend" },
 
   // Backend
-    { name: "Node.js", level: 80, category: "Backend" },
-    { name: "Express", level: 75, category: "Backend" },
-    { name: "MongoDB", level: 70, category: "Backend" },
-    { name: "PostgreSQL", level: 70, category: "Backend" },
-    { name: "Redis", level: 80, category: "Backend" },
-    { name: "Nest.js", level: 87, category: "Backend" },
+    { name: "Node.js",  category: "Backend" },
+    { name: "Express",  category: "Backend" },
+    { name: "MongoDB",  category: "Backend" },
+    { name: "PostgreSQL", , category: "Backend" },
+    { name: "Redis", , category: "Backend" },
+    { name: "Nest.js", category: "Backend" },
 
 
     //Devops and Cloud
-    { name: "Linux", level: 85, category: "Cloud" },
-    { name: "CI/CD", level: 90, category: "Cloud" },
-    { name: "Docker", level: 96, category: "Cloud" },
-    { name: "Kubernetes", level: 92, category: "Cloud" },
-    { name: "Prometheus", level: 85, category: "Cloud" },
-    { name: "Go Lang", level: 85, category: "Cloud" },
+    { name: "Linux",  category: "Cloud" },
+    { name: "CI/CD", category: "Cloud" },
+    { name: "Docker",  category: "Cloud" },
+    { name: "Kubernetes",  category: "Cloud" },
+    { name: "Prometheus", category: "Cloud" },
+    { name: "Go Lang",  category: "Cloud" },
 
     //web3 and Blockchain
-    { name: "Solidity", level: 90, category: "Web3 and Blockchain" },
-    { name: "Ether.js", level: 88, category: "Web3 and Blockchain" },
-    { name: "Hardhat", level: 89, category: "Web3 and Blockchain" },
-    { name: "Foundary", level: 96, category: "Web3 and Blockchain" },
-    { name: "Mocha + Chai", level: 90, category: "Web3 and Blockchain" },
+    { name: "Solidity",  category: "Web3 and Blockchain" },
+    { name: "Ether.js", , category: "Web3 and Blockchain" },
+    { name: "Hardhat",  category: "Web3 and Blockchain" },
+    { name: "Foundary",  category: "Web3 and Blockchain" },
+    { name: "Mocha + Chai", category: "Web3 and Blockchain" },
 ];
 
 const categories = ["All", "Frontend", "Backend", "Cloud", "Web3 and Blockchain",];
@@ -41,7 +41,7 @@ export const SkillsSection = () => {
     const [activeCategory, setActiveCategory] = useState("all");
 
     const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) => activeCategory === "All" || skill.category === activeCategory
     );
     return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
@@ -78,11 +78,6 @@ export const SkillsSection = () => {
                 </div>
                 <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
 
-                <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                    {skill.level}%
-                </span>
-                </div>
             </div>
             ))}
         </div>
