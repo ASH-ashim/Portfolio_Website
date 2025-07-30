@@ -44,7 +44,7 @@ const projects = [
 
 {
     id: 5,
-    title: "Crypto Currency Exchange App",
+    title: "Crypto Currency Exchange dapp",
     description:
     "Crypto currency exchange app with smart contracts and react",
     image: "/projects/upcoming.png",
@@ -66,33 +66,33 @@ const projects = [
 
 {
     id: 7,
-    title: "Expense Tracker App",
+    title: "Supply Chain Dapp",
     description:
-    "Full stack expense tracker mobile application",
+    "Application built on a blockchain network that is designed to manage and track the movement of goods and information within a supply chain",
     image: "/projects/upcoming.png",
-    tags: ["React Native", "Expo", "postgreSQL", "Node.js"],
+    tags: ["Solidity", "Hardhat", "React.js", "Node.js"],
     demoUrl: "#",
     githubUrl: "#",
 },
 
 {
     id: 8,
-    title: "Music Player App",
+    title: "CrowdFunding Dapp",
     description:
-    "Full stack Music player app with electron",
+    "Raise small amounts of money from a large group of people, made using smart contract in blockchain",
     image: "/projects/upcoming.png",
-    tags: ["Electron", "Node.js"],
+    tags: ["Solidity", "Hardhat", "React.js"], 
     demoUrl: "#",
     githubUrl: "#",
 },
 
 {
     id: 9,
-    title: "Blockchain",
+    title: "Full Stack LMS system",
     description:
-    "Blockchain with GO Lang",
+    "A software application used to administer, document, track, report, and deliver educational courses, training programs, or learning and development initiatives",
     image: "/projects/upcoming.png",
-    tags: ["GO Lang"],
+    tags: ["Next.js", "TypeScript", "PostgreSQL"],
     demoUrl: "#",
     githubUrl: "#",
 },
