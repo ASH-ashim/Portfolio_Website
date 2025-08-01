@@ -17,11 +17,10 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-         Full Stack Deeloper and CLoud Architect | Web3 and Blockchain Developer
+         Full Stack Developer and DevOps Engineer | Web3 and Blockchain Developer
             </h3>
             <p className="text-muted-foreground">
-                I’m a Full-stack engineer, Cloud specialist and blockchain/web3 developer with hands-on experience across modern technologies. I’ve built scalable web apps, and deployed secure cloud-native architectures. I specialize in building end-to-end systems that are fast, efficient, and production-ready.
-
+                I’m a Full-stack engineer, DevOps Engineer and blockchain/web3 developer with hands-on experience across modern technologies. I’ve built scalable web apps, and deployed secure Applications. I specialize in building end-to-end systems that are fast, efficient, and production-ready.
 
             </p>
             <p className="text-muted-foreground">
