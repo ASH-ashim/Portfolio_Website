@@ -3,10 +3,12 @@ import { cn } from "@/lib/utils";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { IoLogoHtml5, IoLogoDocker } from "react-icons/io5";
-import { FaReact, FaNodeJs, FaJenkins, FaAws, FaMedapps } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaJenkins, FaAws, FaMedapps, FaHardHat } from "react-icons/fa";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
-import { SiTypescript, SiNestjs, SiKubernetes, SiTerraform, SiPrometheus, SiSolidity, SiEthers, SiHiveBlockchain } from "react-icons/si";
+import { SiTypescript, SiWagmi, SiNestjs, SiKubernetes, SiTerraform, SiGraphql, SiPrometheus, SiSolidity, SiEthers, SiHiveBlockchain } from "react-icons/si";
 import { DiMongodb, DiRedis } from "react-icons/di";
+import { FaGolang } from "react-icons/fa6";
+import { AiOutlineJavaScript } from "react-icons/ai";
 import { BiLogoPostgresql } from "react-icons/bi";
 
 // Register GSAP plugin
@@ -19,30 +21,35 @@ const skills = [
   { name: "TypeScript", category: "frontend", Logo: SiTypescript },
   { name: "Tailwind CSS", category: "frontend", Logo: RiTailwindCssFill },
   { name: "Next.js", category: "frontend", Logo: RiNextjsFill },
+  { name: "JavaScript", category: "frontend", Logo: AiOutlineJavaScript },
 
   // Backend
+  { name: "Go", category: "backend", Logo: FaGolang },
   { name: "Node.js", category: "backend", Logo: FaNodeJs },
+  { name: "GraphQl", category: "backend", Logo: SiGraphql },
   { name: "MongoDB", category: "backend", Logo: DiMongodb },
   { name: "PostgreSQL", category: "backend", Logo: BiLogoPostgresql },
   { name: "Redis", category: "backend", Logo: DiRedis },
   { name: "Nest.js", category: "backend", Logo: SiNestjs },
 
-  // Cloud
-  { name: "Jenkins", category: "devops", Logo: FaJenkins },
-  { name: "AWS", category: "devops", Logo: FaAws },
-  { name: "Docker", category: "devops", Logo: IoLogoDocker },
-  { name: "Kubernetes", category: "devops", Logo: SiKubernetes },
-  { name: "Terraform", category: "devops", Logo: SiTerraform },
-  { name: "Prometheus", category: "devops", Logo: SiPrometheus },
+  // DevOps
+  { name: "Jenkins", category: "devOps", Logo: FaJenkins },
+  { name: "AWS", category: "devOps", Logo: FaAws },
+  { name: "Docker", category: "devOps", Logo: IoLogoDocker },
+  { name: "Kubernetes", category: "devOps", Logo: SiKubernetes },
+  { name: "Terraform", category: "devOps", Logo: SiTerraform },
+  { name: "Prometheus", category: "devOps", Logo: SiPrometheus },
 
   // Web3 and Blockchain
   { name: "Solidity", category: "Web3 and Blockchain", Logo: SiSolidity },
   { name: "Ether.js", category: "Web3 and Blockchain", Logo: SiEthers },
+  { name: "Hardhat", category: "Web3 and Blockchain", Logo:FaHardHat },
   { name: "DApps", category: "Web3 and Blockchain", Logo: FaMedapps },
+    { name: "Wagmi + Viem", category: "Web3 and Blockchain", Logo: SiWagmi },
   { name: "Smart Contracts", category: "Web3 and Blockchain", Logo: SiHiveBlockchain },
 ];
 
-const categories = ["frontend", "backend", "devops", "Web3 and Blockchain"];
+const categories = ["frontend", "backend", "devOps", "Web3 and Blockchain"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("frontend");
@@ -54,17 +61,14 @@ export const SkillsSection = () => {
   );
 
   useEffect(() => {
-    // Clear previous animations
     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     iconRefs.current.forEach(ref => {
       if (ref) gsap.killTweensOf(ref);
     });
 
-    // Animation for each icon
     iconRefs.current.forEach((icon, index) => {
       if (!icon) return;
 
-      // Initial entrance animation
       gsap.fromTo(icon,
         { y: 50, opacity: 0, scale: 0.8 },
         {
@@ -79,7 +83,6 @@ export const SkillsSection = () => {
             toggleActions: "play none none none"
           },
           onComplete: () => {
-            // Continuous floating animation
             gsap.to(icon, {
               y: () => gsap.utils.random(-15, 15),
               rotation: () => gsap.utils.random(-3, 3),
