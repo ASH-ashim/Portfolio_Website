@@ -2,8 +2,6 @@ import {
     Container,
     Code,
     Bitcoin,
-    TabletSmartphone,
-    MonitorSmartphone,
 } from "lucide-react";
 
 export const AboutSection = () => {
@@ -17,10 +15,11 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-         Full Stack Developer and DevOps Engineer | Web3 and Blockchain Developer
+                Full Stack Developer | DevOps Engineer | Web3 and Blockchain Developer
             </h3>
             <p className="text-muted-foreground">
-                I’m a Full-stack engineer, DevOps Engineer and blockchain/web3 developer with hands-on experience across modern technologies. I’ve built scalable web apps, and deployed secure Applications. I specialize in building end-to-end systems that are fast, efficient, and production-ready.
+                I’m a full-stack engineer, DevOps specialist, and blockchain/web3 developer with hands-on experience across modern technologies like React, Next.js, Node.js, Docker, Kubernetes, AWS, and Solidity. I’ve built scalable web apps, mobile and desktop solutions, and deployed secure cloud-native architectures. I specialize in building end-to-end systems that are fast, efficient, and production-ready.
+
 
             </p>
             <p className="text-muted-foreground">
@@ -33,10 +32,11 @@ export const AboutSection = () => {
                 Get In Touch
                 </a>
                 <a
-                href="/projects/cv.pdf" download="cv"
+                //downladable cv
+                href="https://drive.google.com/file/d/1XYkI0LIcEPi1-3RjK4eVlVwrK5CJ7m5U/view?usp=drive_link" download="resume"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                 >
-                Download CV
+                View CV
                 </a>
             </div>
             </div>
@@ -68,7 +68,7 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                     <h4 className="font-semibold text-lg">
-                    DevOps & Cloud Solutions
+                        DevOps Infrastructure
                     </h4>
                     <p className="text-muted-foreground">
                     Automating infrastructure and deploying secure, scalable
@@ -95,7 +95,6 @@ export const AboutSection = () => {
                 </div>
                 </div>
             </div>
-
             </div>
         </div>
         </div>
