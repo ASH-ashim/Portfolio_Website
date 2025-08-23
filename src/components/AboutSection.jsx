@@ -15,10 +15,10 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-                Full Stack Developer | DevOps Engineer | Web3 and Blockchain Developer
+                Full Stack Developer | Web3 and Blockchain Developer
             </h3>
             <p className="text-muted-foreground">
-                I’m a full-stack engineer, DevOps specialist, and blockchain/web3 developer with hands-on experience across modern technologies like React, Next.js, Node.js, Docker, Kubernetes, AWS, and Solidity. I’ve built scalable web apps, mobile and desktop solutions, and deployed secure cloud-native architectures. I specialize in building end-to-end systems that are fast, efficient, and production-ready.
+                I’m a full-stack engineer, and blockchain/web3 developer with hands-on experience across modern technologies like React, Next.js, Node.js, Docker, Kubernetes and Solidity. I specialize in building end-to-end systems that are fast, efficient, and production-ready.
 
 
             </p>
@@ -55,24 +55,6 @@ export const AboutSection = () => {
                     <p className="text-muted-foreground">
                     Building modern, responsive websites and applications using
                     cutting-edge frameworks.
-                    </p>
-                </div>
-                </div>
-            </div>
-
-            {/* DevOps */}
-            <div className="gradient-border p-6 card-hover">
-                <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                    <Container className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                    <h4 className="font-semibold text-lg">
-                        DevOps Infrastructure
-                    </h4>
-                    <p className="text-muted-foreground">
-                    Automating infrastructure and deploying secure, scalable
-                    systems with modern DevOps practices.
                     </p>
                 </div>
                 </div>
