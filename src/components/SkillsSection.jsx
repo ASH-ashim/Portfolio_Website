@@ -32,14 +32,6 @@ const skills = [
   { name: "Redis", category: "backend", Logo: DiRedis },
   { name: "Nest.js", category: "backend", Logo: SiNestjs },
 
-  // DevOps
-  { name: "Jenkins", category: "devOps", Logo: FaJenkins },
-  { name: "AWS", category: "devOps", Logo: FaAws },
-  { name: "Docker", category: "devOps", Logo: IoLogoDocker },
-  { name: "Kubernetes", category: "devOps", Logo: SiKubernetes },
-  { name: "Terraform", category: "devOps", Logo: SiTerraform },
-  { name: "Prometheus", category: "devOps", Logo: SiPrometheus },
-
   // Web3 and Blockchain
   { name: "Solidity", category: "Web3 and Blockchain", Logo: SiSolidity },
   { name: "Ether.js", category: "Web3 and Blockchain", Logo: SiEthers },
@@ -49,7 +41,7 @@ const skills = [
   { name: "Smart Contracts", category: "Web3 and Blockchain", Logo: SiHiveBlockchain },
 ];
 
-const categories = ["frontend", "backend", "devOps", "Web3 and Blockchain"];
+const categories = ["frontend", "backend",  "Web3 and Blockchain"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("frontend");
