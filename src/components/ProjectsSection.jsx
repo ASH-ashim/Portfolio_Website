@@ -33,12 +33,12 @@ const projects = [
 
 {
     id: 4,
-    title: "Instagram Clone With Next.js",
+    title: "Full Stack Blog Application",
     description:
-    "Full Stack instagram clone with Next.js",
+    "Full Stack dynamic Blog Application made by using MERN stack",
     image: "/projects/upcoming.png",
-    tags: ["Next.js", "MongoDB", "Node.js"],
-    demoUrl: "#",
+    tags: ["ShadCN", "MongoDB", "Node.js", "React.js],
+    demoUrl: "ash-blgs.onrender.com",
     githubUrl: "#",
 },
 
@@ -55,9 +55,9 @@ const projects = [
 
 {
     id: 6,
-    title: "Full Stack DeepSeek Clone",
+    title: "Full Stack Lovable Clone built with Next.js",
     description:
-    "Full stack deepseek clone with real time interaction",
+    "Full stack Lovable clone with real time interaction",
     image: "/projects/upcoming.png",
     tags: ["Next.js", "MERN Stack"],
     demoUrl: "#",
@@ -81,7 +81,7 @@ const projects = [
     description:
     "Raise small amounts of money from a large group of people, made using smart contract in blockchain",
     image: "/projects/upcoming.png",
-    tags: ["Solidity", "Hardhat", "React.js"], 
+    tags: ["Solidity", "Hardhat", "Next.js"], 
     demoUrl: "#",
     githubUrl: "#",
 },
