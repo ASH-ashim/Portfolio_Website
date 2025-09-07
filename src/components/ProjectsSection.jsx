@@ -35,7 +35,7 @@ const projects = [
     title: "Full Stack Blog Application",
     description:
       "Full Stack dynamic Blog Application made by using MERN stack",
-    image: "/projects/Screenshot 2025-09-06 221130.png",
+    image: "/Screenshot 2025-09-06 221130.png",
     tags: ["ShadCN", "MongoDB", "Node.js", "React.js"],
     demoUrl: "https://ash-blogs.onrender.com",
     githubUrl: "#",
