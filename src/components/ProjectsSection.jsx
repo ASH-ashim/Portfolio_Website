@@ -23,12 +23,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "Movie Search App",
-    description: "Online movie Search App with API Integrated",
-    image: "/projects/project3.png",
-    tags: ["React", "CSS"],
-    demoUrl: "https://frontend-movie-search-app-jsx.vercel.app/",
-    githubUrl: "https://github.com/ASH-ashim/Frontend-Movie-Search-App_jsx",
+    title: "Spylt Clone with animations",
+    description: "This is the beautiful landing pag inspired by the spylt.com which is a beverage website",
+    image: "Screenshot 2025-09-15 133833.png",
+    tags: ["React", "Tailwind CSS", "GSAP"],
+    demoUrl: "https://ash-gsap.vercel.app",
+    githubUrl: "https://github.com/ASH-ashim",
   },
   {
     id: 4,
