@@ -86,7 +86,7 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4">
-                <a href="https://www.linkedin.com/in/ashim-bhattarai-b81813362/" target="_blank" rel="noopener noreferrer">
+                <a href="www.linkedin.com/in/ashim-bhattarai-977aa7353" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="hover:text-primary transition-colors" />
                 </a>
                 <a href="https://x.com/AshimBHATT15146/" target="_blank" rel="noopener noreferrer">
