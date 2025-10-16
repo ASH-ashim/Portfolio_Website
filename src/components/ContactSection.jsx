@@ -1,15 +1,7 @@
-import {
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-  Twitter,
-} from "lucide-react";
+import { useState } from "react";
+import { Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitter } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -17,17 +9,20 @@ export const ContactSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     setIsSubmitting(true);
-
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      });
-      setIsSubmitting(false);
-    }, 1500);
+    
+    // FormSubmit will handle the actual submission
+    const form = e.target;
+    form.submit();
+    
+    // Show success message
+    toast({
+      title: "Message sent!",
+      description: "Thank you for your message. I'll get back to you soon.",
+    });
+    setIsSubmitting(false);
   };
+
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -42,32 +37,30 @@ export const ContactSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6">
-              {" "}
-              Contact Information
-            </h3>
+            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
 
-            <div className="space-y-6 justify-center">
+            <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />{" "}
+                  <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium"> Email</h4>
+                  <h4 className="font-medium">Email</h4>
                   <a
-                    href="ashimbhattarai4040@gmail.com"
+                    href="mailto:ashimbhattarai4040@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     ashimbhattarai4040@gmail.com
                   </a>
                 </div>
               </div>
+              
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />{" "}
+                  <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium"> Phone</h4>
+                  <h4 className="font-medium">Phone</h4>
                   <a
                     href="tel:+9779767007006"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -76,48 +69,50 @@ export const ContactSection = () => {
                   </a>
                 </div>
               </div>
+              
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />{" "}
+                  <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium"> Location</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                  Butwal, Lumbini, Nepal
-                  </a>
+                  <h4 className="font-medium">Location</h4>
+                  <span className="text-muted-foreground">
+                    Butwal, Lumbini, Nepal
+                  </span>
                 </div>
               </div>
             </div>
 
             <div className="pt-8">
-              <h4 className="font-medium mb-4"> Connect With Me</h4>
-              <div className="flex space-x-4 justify-center">
-                <a href="https://www.linkedin.com/in/ashimdev23/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bo9KJzZFVS5aaUa2OSdyWdQ%3D%3D" target="_blank">
-                  <Linkedin />
+              <h4 className="font-medium mb-4">Connect With Me</h4>
+              <div className="flex space-x-4">
+                <a href="https://www.linkedin.com/in/ashimdev23/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="hover:text-primary transition-colors" />
                 </a>
-                <a href="https://x.com/AshimBHATT15146/" target="_blank">
-                  <Twitter />
+                <a href="https://x.com/AshimBHATT15146/" target="_blank" rel="noopener noreferrer">
+                  <Twitter className="hover:text-primary transition-colors" />
                 </a>
-                <a href="https://www.instagram.com/ashim__dev/" target="_blank">
-                  <Instagram />
-                  </a>
+                <a href="https://www.instagram.com/ashim__dev/" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="hover:text-primary transition-colors" />
+                </a>
               </div>
             </div>
           </div>
 
-          <div
-            className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
-          >
-            <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
-
-            <form className="space-y-6">
+          <div className="bg-card p-8 rounded-lg shadow-xs">
+            <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
+            
+            <form 
+              action="https://formsubmit.co/ashimbhattarai4040@gmail.com" 
+              method="POST"
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
+              <input type="hidden" name="_subject" value="New message from portfolio website" />
+              <input type="hidden" name="_template" value="basic" />
+              
               <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium mb-2"
-                >
-                  {" "}
+                <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Your Name
                 </label>
                 <input
@@ -125,17 +120,13 @@ export const ContactSection = () => {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                   placeholder="Ashim Bhattarai.."
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium mb-2"
-                >
-                  {" "}
+                <label htmlFor="email" className="block text-sm font-medium mb-2">
                   Your Email
                 </label>
                 <input
@@ -143,24 +134,21 @@ export const ContactSection = () => {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="ashimbhattarai4040@gmail.com"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium mb-2"
-                >
-                  {" "}
+                <label htmlFor="message" className="block text-sm font-medium mb-2">
                   Your Message
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
+                  rows={5}
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
                   placeholder="Hello, I'd like to talk about..."
                 />
               </div>
@@ -169,7 +157,8 @@ export const ContactSection = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={cn(
-                  "cosmic-button w-full flex items-center justify-center gap-2"
+                  "cosmic-button w-full flex items-center justify-center gap-2",
+                  isSubmitting && "opacity-70 cursor-not-allowed"
                 )}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}

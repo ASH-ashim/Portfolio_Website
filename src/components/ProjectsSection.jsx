@@ -1,5 +1,4 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
-
 const projects = [
 {
     id: 1,
@@ -12,90 +11,38 @@ const projects = [
 },
 {
     id: 2,
-    title: "Full stack Online Grocery App",
+    title: "Spylt Clone with GSAP",
     description:
-    "Full stack online grocery App with both frontend and backend",
-    image: "/projects/upcoming.png",
-    tags: ["MERN Stack"],
-    demoUrl: "#",
+    "Spylt clone with smooth animations using GSAP",
+    image: "./projects/spylt.png",
+    tags: ["React", "Tailwind CSS", "GSAP"],
+    demoUrl: "https://ash-social.vercel.app",
     githubUrl: "#",
 },
-{
-    id: 3,
-    title: "Movie Search App",
-    description:
-    "Online movie Search App with API Integrated",
-    image: "/projects/project3.png",
-    tags: ["React","CSS",],
-    demoUrl: "https://frontend-movie-search-app-jsx.vercel.app/",
-    githubUrl: "https://github.com/ASH-ashim/Frontend-Movie-Search-App_jsx",
-},
+
 
 {
     id: 4,
-    title: "Instagram Clone With Next.js",
+    title: "Full stack Chatting Application",
     description:
-    "Full Stack instagram clone with Next.js",
-    image: "/projects/upcoming.png",
-    tags: ["Next.js", "MongoDB", "Node.js"],
-    demoUrl: "#",
-    githubUrl: "#",
-},
-
-{
-    id: 5,
-    title: "Crypto Currency Exchange App",
-    description:
-    "Crypto currency exchange app with smart contracts and react",
-    image: "/projects/upcoming.png",
-    tags: ["Solidity", "React"],
-    demoUrl: "#",
+    "Full stack online chatting application",
+    image: "/projects/project4.png",
+    tags: ["ReactJS", "MongoDB", "Node.js"],
+    demoUrl: "",
     githubUrl: "#",
 },
 
 {
     id: 6,
-    title: "Full Stack DeepSeek Clone",
+    title: "Full Stack Blog Application",
     description:
-    "Full stack deepseek clone with real time interaction",
-    image: "/projects/upcoming.png",
-    tags: ["Next.js", "MERN Stack"],
-    demoUrl: "#",
+    "Full Stack dynamic Blog Application made by using MERN stack",
+    image: "/projects/blogs.png",
+    tags: ["Cloudinary", "Multer",  "MERN Stack"],
+    demoUrl: "https://ash-blogs.onrender.com/",
     githubUrl: "#",
 },
 
-{
-    id: 7,
-    title: "Expense Tracker App",
-    description:
-    "Full stack expense tracker mobile application",
-    image: "/projects/upcoming.png",
-    tags: ["React Native", "Expo", "postgreSQL", "Node.js"],
-    demoUrl: "#",
-    githubUrl: "#",
-},
-
-{
-    id: 8,
-    title: "Music Player App",
-    description:
-    "Full stack Music player app with electron",
-    image: "/projects/upcoming.png",
-    tags: ["Electron", "Node.js"],
-    demoUrl: "#",
-    githubUrl: "#",
-},
-
-{
-    id: 9,
-    title: "Blockchain",
-    description:
-    "Blockchain with GO Lang",
-    image: "/projects/upcoming.png",
-    tags: ["GO Lang"],
-    demoUrl: "#",
-    githubUrl: "#",
-},
 ];
 
 
