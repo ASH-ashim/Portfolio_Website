@@ -64,10 +64,6 @@ export const HeroSection = () => {
                         |{" "}
                         <span className="bg-gradient-to-r from-[#00f0ff] to-[#3aec1f] bg-clip-text text-transparent font-semibold">
                             DevOps Engineer
-                        </span>{" "}
-                        |{" "}
-                        <span className="bg-gradient-to-r from-[#3aec1f] to-[#00f0ff] bg-clip-text text-transparent font-semibold">
-                            Cybersecurity Enthusiast
                         </span>
                     </p>
                     <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-0.5 bg-gradient-to-r from-transparent via-[#3aec1f] to-transparent opacity-0 animate-fade-in-delay-3" />
@@ -90,15 +86,6 @@ export const HeroSection = () => {
                         Get In Touch
                     </a>
                 </div>
-            </div>
-
-            {/* Scroll Indicator */}
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-                <div className="relative">
-                    <div className="absolute inset-0 bg-[#3aec1f] rounded-full blur-sm animate-pulse" />
-                    <ArrowDown className="relative h-6 w-6 text-[#3aec1f]" />
-                </div>
-                <span className="text-sm text-gray-400/80 mt-2 tracking-widest">SCROLL</span>
             </div>
 
             {/* Floating Elements */}
