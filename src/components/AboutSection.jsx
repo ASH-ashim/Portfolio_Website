@@ -69,24 +69,6 @@ export const AboutSection = () => {
                 </div>
                 </div>
             </div>
-
-            {/* Cybersecurity */}
-            <div className="gradient-border p-6 card-hover">
-                <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                    <Shield className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                    <h4 className="font-semibold text-lg">
-                    Cybersecurity Focus
-                    </h4>
-                    <p className="text-muted-foreground">
-                    Implementing security best practices and developing with a security-first mindset across applications and infrastructure.
-                    </p>
-                </div>
-                </div>
-            </div>
-            </div>
         </div>
         </div>
     </section>
