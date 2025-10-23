@@ -58,12 +58,9 @@ const skills = [
   {name: "Ansible", category: "devOps", Logo: SiAnsible},
   { name: "Prometheus", category: "devOps", Logo: SiPrometheus },
 
-  //cybersecurity
-  {name: "Kali Linux", category:"Cybersecurity", Logo: SiKalilinux },
-  {name: "Wireshark", category: "Cybersecurity", Logo: SiWireshark}
 ];
 
-const categories = ["frontend", "backend", "devOps", "Cybersecurity"];
+const categories = ["frontend", "backend", "devOps"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("frontend");
